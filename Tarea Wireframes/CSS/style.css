@@ -3,66 +3,34 @@
     padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h3, h5, h1 {
     font-weight: 400;
 }
 
-nav{
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav li a {
-    padding: 10px 10px;
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-}
-
-nav li a:hover{
-    color: blue;
-}
-
-.container {
-    width: 100%;
+p{
+    margin: 0;
+    padding: 0;
 }
 
 .containerTop {
     background-color: white;
-}
-
-.centerTop {
-    margin-top: 7%;
-    padding-left: 7%;
-    padding-right: 7%;
+    margin-top: 60px;
 }
 
 .containerCenter {
-    padding-left: 7%;
-    padding-right: 7%;
     background-color: lightgray;
 }
 
-.containerCenter .container, .containerBottomCenter {
-    box-shadow: 2px 2px 20px rgb(158, 156, 156);
-}
-
-.centerBottom {
-    padding-left: 7%;
-    padding-right: 7%;
-    margin-bottom: 7%;
-}
-
-.centerBottom .container {
-    padding-left: 30px;
+.page .containerTop .container, .page .containerBottom .container, .page .containerCenter .container{
+    box-shadow: 0px 10px 10px 10px  rgb(158, 156, 156);
 }
 
 .containerLightBlue {
     background-color:rgb(174,206,221) ;
-    height: 100px;
 }
 
 .textBlue {
@@ -71,90 +39,51 @@ nav li a:hover{
     transform: translateY(20px);
 }
 
-.containerPink {
-    background-color: rgb(242,214,213);
-    color: white;
-    height: 100px;
+.secondRow{
+    height: 140px;
+}
 
+.containerPink {
+    color: white;
+    background-image: url("../img/pink.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-caption{
+    color: black;
+    font-weight: bold;
+    text-align: left;
 }
 
 .containerCoral {
-    background-color: rgb(214, 197, 190);
     color: white;
-    height: 100px;
+    background-image: url("../img/coral.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .containerLightBrown {
-    background-color: rgb(230,216,187);
     color: white;
-    height: 100px;
+    background-image: url("../img/brown.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .containerText {
     padding-left: 30px;
     transform: translateY(20px);
+    text-align: left;
 }
 
-.row{
-   width: 100%;
-}
-
-.rowPadding {
-    padding-top: 30px;
-}
-
-.col-8 {
-    display: inline-block;
-    width: 66.6%;
-}
-
-.col-8 img {
-    width: 100%;
-    height: 480px;
-}
-
-.col-6 {
-    display: inline-block;
-    width: 50%;
-    
-}
-
-.col-4 {
-    display: inline-block;
-    width: 33.3%;
-}
-
-.col-4 img{
-    height: 480px;
-}
-
-.col-2 {
-    display: inline-block;
-    width: 16.66%;
-}
-
-.floatRight {
-    float: right;
-}
-
-.floatLeft {
-    float: left;
-}
-
-.carousel-inner{
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.buttons-container {
-    margin: auto;
-    float: left;
-    padding: 5px 5px;
+.containerText, .containerText h5,.containerText h6 {
+   
+    text-align: left;
 }
 
 .containerBottom {
     background-color: white;
+    margin-bottom: 60px;
 }
 
 .containerBottomCenter {
@@ -166,6 +95,95 @@ nav li a:hover{
     padding:8px;
 }
 
-.centerItems{
-    align-items: center;
+.centerItems, h6{
+    text-align: center;
+}
+
+.footerBanner{
+    display: flex;
+}
+
+.footerBanner div{
+    flex-direction: column;
+}
+
+.carouselTitle{
+    background-color: rgb(240, 241, 243);
+}
+
+.carouselTitle .title{
+    text-align: center;
+    margin: auto;
+    transform: translateY(200%);
+    font-weight: bold;
+}
+
+.sinpadding [class*="col-"] {
+    padding: 0;
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 100%;
+}
+
+.banner1 {
+    color: white;
+    background-image: url("../img/banner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col-sm-8 img, .col-md-8 img, .col-lg-8 img {
+    height: auto;
+    width: 100%;
+}
+
+.font-sm, .font-xs{
+    font-size: 12px;   
+}
+
+.font-md{
+    font-size: 14px;   
+}
+
+.font-lg, .font-xl{
+    font-size: 16px;   
+}
+/*Slick-carousel*/
+
+.slider {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
 }
