@@ -4,14 +4,16 @@
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-h3, h5, h1 {
+h3,
+h5,
+h1 {
     font-weight: 400;
 }
 
-p{
+p {
     margin: 0;
     padding: 0;
 }
@@ -25,12 +27,14 @@ p{
     background-color: lightgray;
 }
 
-.page .containerTop .container, .page .containerBottom .container, .page .containerCenter .container{
-    box-shadow: 0px 10px 10px 10px  rgb(158, 156, 156);
+.page .containerTop .container,
+.page .containerBottom .container,
+.page .containerCenter .container {
+    box-shadow: 0px 10px 10px 10px rgb(158, 156, 156);
 }
 
 .containerLightBlue {
-    background-color:rgb(174,206,221) ;
+    background-color: rgb(174, 206, 221);
 }
 
 .textBlue {
@@ -39,7 +43,7 @@ p{
     transform: translateY(20px);
 }
 
-.secondRow{
+.secondRow {
     height: 140px;
 }
 
@@ -50,7 +54,7 @@ p{
     background-size: cover;
 }
 
-.carousel-caption{
+.carousel-caption {
     color: black;
     font-weight: bold;
     text-align: left;
@@ -76,8 +80,9 @@ p{
     text-align: left;
 }
 
-.containerText, .containerText h5,.containerText h6 {
-   
+.containerText,
+.containerText h5,
+.containerText h6 {
     text-align: left;
 }
 
@@ -91,27 +96,28 @@ p{
 }
 
 .containerBottomCenter .title {
-    text-align:center;
-    padding:8px;
+    text-align: center;
+    padding: 8px;
 }
 
-.centerItems, h6{
+.centerItems,
+h6 {
     text-align: center;
 }
 
-.footerBanner{
+.footerBanner {
     display: flex;
 }
 
-.footerBanner div{
+.footerBanner div {
     flex-direction: column;
 }
 
-.carouselTitle{
+.carouselTitle {
     background-color: rgb(240, 241, 243);
 }
 
-.carouselTitle .title{
+.carouselTitle .title {
     text-align: center;
     margin: auto;
     transform: translateY(200%);
@@ -138,22 +144,28 @@ p{
     background-size: cover;
 }
 
-.col-sm-8 img, .col-md-8 img, .col-lg-8 img {
+.col-sm-8 img,
+.col-md-8 img,
+.col-lg-8 img {
     height: auto;
     width: 100%;
 }
 
-.font-sm, .font-xs{
-    font-size: 12px;   
+.font-sm {
+    font-size: 12px;
 }
 
-.font-md{
-    font-size: 14px;   
+.font-md {
+    font-size: 14px;
 }
 
-.font-lg, .font-xl{
-    font-size: 16px;   
+.font-lg,
+.font-xl,
+.font-xs {
+    font-size: 16px;
 }
+
+
 /*Slick-carousel*/
 
 .slider {
@@ -162,28 +174,27 @@ p{
 }
 
 .slick-slide {
-  margin: 0px 20px;
+    margin: 0px 20px;
 }
 
 .slick-slide img {
-  width: 100%;
+    width: 100%;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
+    color: black;
 }
 
-
 .slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
+    transition: all ease-in-out .3s;
+    opacity: .2;
 }
 
 .slick-active {
-  opacity: .5;
+    opacity: .5;
 }
 
 .slick-current {
-  opacity: 1;
+    opacity: 1;
 }
